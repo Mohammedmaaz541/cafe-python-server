@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CozyCup Café</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff9f3;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.5rem;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .about, .menu, .contact {
+      text-align: center;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .menu-item {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .menu-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 12px;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .menu-item h3 {
+      margin-bottom: 10px;
+      color: #7a4e2f;
+    }
+
+    .menu-item p {
+      font-size: 0.95rem;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+
+    footer {
+      background: #3e2d26;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.5rem;
+      }
+
+      header p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CozyCup Café</h1>
+    <p>Fresh Coffee • Cozy Vibes • Delicious Treats</p>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>At CozyCup Café, we believe every cup of coffee tells a story. Whether you need a morning pick-me-up or a sweet treat in the afternoon, we serve handcrafted beverages and fresh pastries in a cozy and inviting space.</p>
+  </section>
+
+  <section class="menu">
+  <h2>Our Menu</h2>
+  <div class="menu-items">
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Latte">
+      <h3>Classic Latte</h3>
+      <p>Rich espresso blended with steamed milk and a touch of foam.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80" alt="Pastry">
+      <h3>Fresh Pastries</h3>
+      <p>Our daily selection includes buttery croissants, muffins & tarts.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/portioned-iced-coffee-royalty-free-image-1680541694.jpg?crop=0.89002xw:1xh;center,top&resize=1200:*" alt="Cold Brew">
+      <h3>Cold Brew</h3>
+      <p>Slow-brewed overnight for a bold and smooth finish.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80" alt="Cappuccino">
+      <h3>Cappuccino</h3>
+      <p>Perfectly balanced espresso, steamed milk, and velvety foam.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Mocha-1fc71f7.png?resize=1200%2C630" alt="Mocha">
+      <h3>Mocha</h3>
+      <p>Espresso with rich chocolate syrup and creamy steamed milk.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80" alt="Iced Tea">
+      <h3>Iced Tea</h3>
+      <p>Refreshing fruit-infused teas served chilled over ice.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxDIBKWRQWja9b128TVshvbVDNiaN__ZvyDQ&s" alt="Cheesecake">
+      <h3>Cheesecake</h3>
+      <p>Classic creamy cheesecake with a buttery graham cracker crust.</p>
+    </div>
+
+    <div class="menu-item">
+      <img src="https://www.gastronomblog.com/wp-content/uploads/2019/09/Pumpkin-Cream-Cold-Brew-Cocktail-7.jpg" alt="Espresso Shot">
+      <h3>Espresso Shot</h3>
+      <p>A bold and concentrated shot of pure espresso energy.</p>
+  </div>
+</section>
+
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 123 Bean Street, Coffeeville<br />
+       📞 (123) 456-7890<br />
+       ✉️ hello@cozycup.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 CozyCup Café. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
